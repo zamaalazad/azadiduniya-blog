@@ -1,0 +1,128 @@
+/*========================
+* Google Fonts: Hind Siliguri
+=========================*/
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
+/*========================
+* CSS Variables 
+=========================*/
+:root{
+    --bengali-font: 'Hind Siliguri', sans-serif;
+    --bg-color: #e2e2e2;
+    --link-color: rgba(0,0,0,0.87);
+}
+
+/*=========================
+* Global Element Styles  
+=========================*/
+h1,
+h2,
+h3,
+h4,
+a,
+div,
+article,
+p,
+section,
+aside,
+footer,
+body,
+main,
+header,
+ul,
+li,
+ol{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--bengali-font);
+}
+
+input,
+textarea,
+::placeholder{
+    font-family: var(--bengali-font);
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--link-color);
+    display: inline-block;
+}
+
+#container{
+    margin: 40px 260px;
+}
+
+header{
+    grid-area: header;
+}
+
+article{
+    grid-area: blogpost;
+}
+
+aside{
+    grid-area: sidebar;
+}
+
+footer{
+    grid-area: footer;
+}
+
+#container{
+    display: grid;
+    grid-template-areas: 
+        "header header header header"
+        "blogpost blogpost blogpost sidebar"
+        "footer footer footer footer";
+    gap: 4em;
+}
+
+/*======================  
+* Header Styles Here
+======================*/
+
+.header-blogpost__title{
+    font-size: 3em;
+}
+
+.header-blogpost__nav,
+.header-blogpost__main-nav,
+.header-blogpost__social-nav{
+    display: flex;
+    gap: 1em;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.header-blogpost__main-nav,
+.header-blogpost__social-nav{
+    align-items: center;
+}
+
+/*===================
+* Article Styles Here  
+=====================*/
+.article-blogpost > div{
+    margin-bottom: 40px;
+}
+
+.header-blogpost__posts > a{
+    font-size: 1.8em;
+}
+
+
+
+
+
+
+
