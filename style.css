@@ -31,7 +31,9 @@ main,
 header,
 ul,
 li,
-ol{
+ol,
+input,
+textarea{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -148,8 +150,63 @@ footer{
     background: var(--link-color);
 }
 
+.article-single__title{
+    font-size: 28px;
+}
+
+.article-single__content{
+    font-size: 24px;
+    line-height: 36px;
+}
+.article-single__content figure img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.article-single__content figure figcaption{
+    font-size: 18px;
+}
+
+.article-single__content > *{
+    margin: 1em 0;
+}
 
 
+/*=======================
+* Sidebar Styles Here
+=======================*/
+.sidebar-blogpost{
+    margin-top: 40px;
+}
+
+.sidebar-blogpost__search,
+.sidebar-blogpost__recent-posts,
+.sidebar-blogpost__tags{
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.search-title{
+    margin-bottom: 1em;
+}
+
+.sidebar-blogpost__search input{
+    padding: 8px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.sidebar-blogpost__recent-posts ul{
+    margin: 20px 0;
+}
+
+.sidebar-blogpost__recent-posts ul li ul{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    gap: 1em;
+}
 
 
 
