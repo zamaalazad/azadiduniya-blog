@@ -60,10 +60,6 @@ a{
     display: inline-block;
 }
 
-#container{
-    margin: 40px 260px;
-}
-
 header{
     grid-area: header;
 }
@@ -78,15 +74,6 @@ aside{
 
 footer{
     grid-area: footer;
-}
-
-#container{
-    display: grid;
-    grid-template-areas: 
-        "header header header header"
-        "blogpost blogpost blogpost sidebar"
-        "footer footer footer footer";
-    gap: 4em;
 }
 
 /*======================  
@@ -220,6 +207,67 @@ footer{
 }
 
 
+/* Responsive Codes Here */
+@media  screen and (min-width: 960px) {
+    #container{
+        margin: 40px 260px;
+    }
 
+    #container{
+        display: grid;
+        grid-template-areas: 
+            "header header header header"
+            "blogpost blogpost blogpost sidebar"
+            "footer footer footer footer";
+        gap: 4em;
+    }
 
+    .mobile{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 959px) {
+    #container{
+        margin: 40px 80px;
+    }
+    
+    #container{
+        display: grid;
+        grid-template-areas: 
+            "header header header"
+            "blogpost blogpost sidebar"
+            "footer footer footer";
+        gap: 2em;
+    }
+
+    .mobile{
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+    #container{
+        margin: 40px;
+    }
+
+    #container{
+        display: grid;
+        grid-template-areas: 
+            "header"
+            "blogpost"
+            "sidebar"
+            "footer";
+        gap: 2em;
+    }
+
+    .header-blogpost__title{
+        font-size: 2em;
+    }
+
+    .screen{
+		display: none;
+	}
+}
 
