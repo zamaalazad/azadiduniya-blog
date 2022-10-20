@@ -111,6 +111,10 @@ footer{
     align-items: center;
 }
 
+.header-blogpost__nav i{
+    margin-right: 10px;
+}
+
 /*===================
 * Article Styles Here  
 =====================*/
@@ -207,6 +211,7 @@ footer{
     font-size: 14px;
     gap: 1em;
 }
+
 
 
 
